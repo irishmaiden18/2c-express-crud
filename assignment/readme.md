@@ -32,4 +32,7 @@ Your task is to create a server with routes to perform the following actions:
 - `R`ead all available ingredients for ONE ingredient type (Hint: Use Query Parameters or Dynamic Parameters)
 - `C`reate a new ingredient (Hint: Use the request body to accept the new data)
 - `U`pdate the ingredients list for one ingredient type, i.e., replace the ingredients list with a new list (Hint: Use Dynamic Parameters for the ingredient type and the request body to accept the new list)
-- `D`elete an ingredient (Hint: Use Dynamic Parameters to know which ingredient to remove, and optionally a Query Parameter or second Dynamic Parameter to narrow down which ingredient type it's in)
+- `D`elete an ingredient type, clearing that entire type as well as its associated array. Hint: Use Dynamic Parameters
+
+Stretch Goal
+- `D`elete a single ingredient (not an entire type) (Hint: Use Dynamic Parameters to know which ingredient to remove, and optionally a Query Parameter or second Dynamic Parameter to narrow down which ingredient type it's in)
