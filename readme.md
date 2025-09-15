@@ -250,7 +250,7 @@ Next is the PATCH request. Here we will use something called Dynamic Parameters 
 7. Handle PATCH requests to localhost:3000/pokemons/:name
 
 ```js
-app.patch("/pokemons/:name", (req, res) => {
+app.put("/pokemons/:name", (req, res) => {
   // dynamic param, /:name is dynamic
 
   // 7a. Find the pokemon you want to change
@@ -340,5 +340,5 @@ SUMMARY:
 | ------ | ------------ | -------------------------------------- |
 | Create | POST         | Request Body                           |
 | Read   | GET          | URL + (optionally) Query Parameters    |
-| Update | PATCH        | URL + Request Body + Dynamic Parameter |
+| Update | PUT          | URL + Request Body + Dynamic Parameter |
 | Delete | DELETE       | URL + Dynamic Parameter                |
