@@ -245,9 +245,9 @@ app.post("/pokemons", (req, res) => {
 
 ### Dynamic Parameters
 
-Next is the PATCH request. Here we will use something called Dynamic Parameters to target the data we would like to edit/update. The `/:name` means that if the URL is `localhost:3000/pokemons/pikachu`, the `req.params` will be `{ name: "pikachu" }`. It's similar to the Query, but Queries are usually used for filtering large data (look at the URL when navigating products on a website such as Adidas.com) while Dynamic Parameters are used for targeting specific data points in a database.
+Next is the PUT request. Here we will use something called Dynamic Parameters to target the data we would like to edit/update. The `/:name` means that if the URL is `localhost:3000/pokemons/pikachu`, the `req.params` will be `{ name: "pikachu" }`. It's similar to the Query, but Queries are usually used for filtering large data (look at the URL when navigating products on a website such as Adidas.com) while Dynamic Parameters are used for targeting specific data points in a database.
 
-7. Handle PATCH requests to localhost:3000/pokemons/:name
+7. Handle PUT requests to localhost:3000/pokemons/:name
 
 ```js
 app.put("/pokemons/:name", (req, res) => {
@@ -279,11 +279,11 @@ app.put("/pokemons/:name", (req, res) => {
 
     res.status(200).json({ message: "success", payload: foundPokemon });
   } // end of if/else statement
-}); // end of PATCH "/pokemons/:name"
+}); // end of PUT "/pokemons/:name"
 ```
 
 - Run the server by going to the terminal and using the command `node index.js`
-- Use Postman to perform a PATCH request to `localhost:3000/pokemons/:name` and in the Body tab (set text to raw JSON), make sure to fill it with the keys that match the keys of the original data, and fill the values with unique values. Also test a name that doesn't match the data, so you can see what a failure looks like.
+- Use Postman to perform a PUT request to `localhost:3000/pokemons/:name` and in the Body tab (set text to raw JSON), make sure to fill it with the keys that match the keys of the original data, and fill the values with unique values. Also test a name that doesn't match the data, so you can see what a failure looks like.
 - Once it works, cut the server off by pressing `ctrl + c` in the terminal
 
 ---
