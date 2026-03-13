@@ -1,4 +1,4 @@
-const ingredients = [
+let ingredients = [
   { type: "bread", items: ["white", "wheat", "sourdough", "rye", "multigrain"] },
   { type: "meat", items: ["turkey", "ham", "roast beef", "chicken", "bacon", "salami"] },
   { type: "cheese", items: ["cheddar", "swiss", "provolone", "mozzarella", "pepper jack", "Muenster"] },
@@ -7,3 +7,11 @@ const ingredients = [
 ];
 
 module.exports = ingredients;
+
+
+/*
+{
+    "type": "snack",
+    "items": ["apple", "chips", "banana", "pudding"]
+}
+*/
